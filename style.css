@@ -144,6 +144,7 @@
     display: inline-block;
     margin: 2rem 0;
     transition: var(--transition);
+    border-radius: 2rem;
   }
 
   .btn:hover {
@@ -388,18 +389,19 @@ section.skills .skill {
 }
 
 section.skills .skill .head {
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  border: 1px solid var(--color-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: 1.6rem;
   border-radius: 2rem;
   cursor: pointer;
 }
 
 section.skills .skill .head h4{
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 section.skills .skill .head .left {
@@ -639,6 +641,7 @@ section.contact form textarea {
   background-color: transparent;
   color: var(--color-white);
   transition: var(--transition);
+  border-radius: 2rem;
 }
 
 section.contact form textarea {
@@ -720,6 +723,16 @@ footer .copyright {
   margin-top: 5rem;
   padding: 2rem;
   font-size: 0.8rem;
+}
+
+footer .copyright a {
+  color: var(--color-white);
+  margin-left: 0px;
+}
+
+footer .copyright a:hover{
+  text-decoration: underline;
+  margin-left: 4px;
 }
 
   /* ======MEDIA QUERIES======  */
@@ -816,6 +829,10 @@ footer .copyright {
 
   section.landing .container .info {
     width: 90%;
+    margin: 0 auto;
+  }
+
+  .icon-btn {
     margin: 0 auto;
   }
 
